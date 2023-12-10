@@ -79,6 +79,7 @@ hr{
     color:rgb(30, 115, 212);
     font-size: 16px;
     font-family: 'Avenir Next LT Pro Light', sans-serif;
+    font-weight: bolder;
 }
 #college,#email,#year-graduation,#education,#more-about,#telephone,#fax{
     color: #555;
@@ -148,9 +149,22 @@ strong,span{
     font-size: 18px;
     line-height: 1;
     font-family: 'Avenir Next LT Pro Light', sans-serif;
-} */
+}
 .card > p > i{
     font-size: 18px;
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
+} */
+.card > p{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
+    line-height: 1.2;
+}
+#title{
+    color: #0e141e;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 1;
     font-family: 'Avenir Next LT Pro Light', sans-serif;
 }
 .card > a{
@@ -202,7 +216,7 @@ strong,span{
         margin-bottom: 30px;
     }
 }
-.basic{
+/* .basic{
     font-size: 16px;
     font-weight: normal;
     font-family: 'Avenir Next LT Pro Light', sans-serif;
@@ -214,4 +228,4 @@ strong,span{
     font-size: 18px;
     line-height: 1;
     font-family: 'Avenir Next LT Pro Light', sans-serif;
-}
+} */
