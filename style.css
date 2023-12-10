@@ -13,7 +13,7 @@ hr{
 #container{
     position: relative;
     display: flex;
-    background: rgb(230, 255, 252);
+    background: rgb(230, 255, 248);
 }
 #profile{
     flex: 15%;
