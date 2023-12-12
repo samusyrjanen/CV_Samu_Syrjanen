@@ -142,6 +142,7 @@ strong,span{
     padding: 15px 30px 30px 30px;
     background-color: #fff;
     font-family: 'Avenir Next LT Pro Light', sans-serif;
+    max-width: 1000px;
 }
 /* .card > p{
     color: #0e141e;
@@ -237,9 +238,17 @@ strong,span{
     font-family: 'Avenir Next LT Pro Light', sans-serif;
 } */
 #lakka{
-    margin: 0;
-    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    height: 30px;
+    scale: 0.03;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#bpt{
     justify-content: center;
     align-items: center;
     text-align: center;
