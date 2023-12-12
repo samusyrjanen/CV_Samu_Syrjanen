@@ -13,7 +13,7 @@ hr{
 #container{
     position: relative;
     display: flex;
-    background: rgb(230, 255, 248);
+    background: rgba(214, 247, 238, 0.836);
 }
 #profile{
     flex: 15%;
@@ -163,7 +163,7 @@ strong,span{
 #title{
     color: #0e141e;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1;
     font-family: 'Avenir Next LT Pro Light', sans-serif;
 }
@@ -182,7 +182,14 @@ strong,span{
     font-family: 'Avenir Next LT Pro Light', sans-serif;
 }
 .card > ul{
-    list-style-type: none;
+    list-style-type: circle;
+    font-size: 18px;
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
+}
+#list{
+    list-style-type: circle;
+    font-size: 18px;
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
 }
 .tags{
     font-size: 17px;
@@ -229,3 +236,11 @@ strong,span{
     line-height: 1;
     font-family: 'Avenir Next LT Pro Light', sans-serif;
 } */
+#lakka{
+    margin: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
