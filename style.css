@@ -237,21 +237,15 @@ strong,span{
     line-height: 1;
     font-family: 'Avenir Next LT Pro Light', sans-serif;
 } */
-/* #lakka{
+#lakka{
     margin-left: auto;
     margin-right: auto;
-    width: 30px;
-    height: 30px;
+    width: 8%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-} */
-#lakka{
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    height: auto;
 }
 #bpt{
     justify-content: center;
