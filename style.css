@@ -242,7 +242,7 @@ strong,span{
     margin-right: auto;
     width: 30px;
     height: 30px;
-    scale: 0.03;
+    transform: scale(0.03);
     display: flex;
     justify-content: center;
     align-items: center;
