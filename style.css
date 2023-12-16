@@ -244,3 +244,7 @@ strong,span{
     align-items: center;
     text-align: center;
 }
+#FSOcertificate{
+    width: 100%;
+    height: auto;
+}
