@@ -245,6 +245,14 @@ strong,span{
     text-align: center;
 }
 #FSOcertificate{
-    width: 100%;
+    width: 90%;
+    height: auto;
+}
+#bpt_front_view{
+    width: 90%;
+    height: auto;
+}
+#sortext{
+    width: 80%;
     height: auto;
 }
