@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
   <title>PDF</title>
+  <script>
+    function isMobileDevice() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    function updatePdfObject() {
+      var pdfObject = document.getElementById('pdfObject');
+
+      if (isMobileDevice()) {
+        pdfObject.innerHTML = '<iframe src="./CV_Samu_Syrjänen_English.pdf" width="100%" height="auto"></iframe>';
+      } else {
+        pdfObject.innerHTML = '<object data="./CV_Samu_Syrjänen_English.pdf" type="application/pdf" width="100%" height="3000px"></object>';
+      }
+    }
+
+    window.onload = updatePdfObject;
+  </script>
 </head>
 <body>
-    <object data="./CV_Samu_Syrjänen_English.pdf" type="application/pdf" width="100%" height="3000px">
-    </object>
+    <div id="pdfObject"></div>
 </body>
 </html>
