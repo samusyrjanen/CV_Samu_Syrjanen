@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PDF</title>
+  <script>
+    function isMobileDevice() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    function updatePdfObject() {
+      var pdfObject = document.getElementById('pdfObject');
+
+      if (isMobileDevice()) {
+        pdfObject.innerHTML = '<iframe src="./IML_project_report.pdf" width="100%" height="auto"></iframe>';
+      } else {
+        pdfObject.innerHTML = '<object data="./IML_project_report.pdf" type="application/pdf" width="100%" height="3000px"></object>';
+      }
+    }
+
+    window.onload = updatePdfObject;
+  </script>
+</head>
+<body>
+    <div id="pdfObject"></div>
+</body>
+</html>
