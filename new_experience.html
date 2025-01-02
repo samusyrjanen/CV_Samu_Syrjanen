@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Your Page Title</title>
+</head>
+<body>
+    <!-- Main Content Container -->
+    <div class="main-container">
+		<!-- Left Navigation Bar -->
+		<div id="left-nav">
+			<!--<div id="nav-header">
+				<h2>Samu Syrjänen</h2>
+				<div id="nav-buttons">
+					<a href="https://samusyrjanen.github.io/CV_Samu_Syrjanen/" class="nav-btn" target="_blank">Go to CV</a>
+					<a href="path/to/your-cv.pdf" class="nav-btn nav-btn-icon" download>
+						<i class="fas fa-download"></i>
+					</a>
+				</div>
+			</div>-->
+			<div id="nav-links">
+				<ul>
+					<li><a href="#samu_syrjanen">Me</a></li>
+					<li><a href="#career">Career</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#future">Future</a></li>
+					<li><a href="#contact_me">Contact Me</a></li>
+				</ul>
+			</div>
+		</div>
+        <!-- Info Cards -->
+        <div id="info-cards">
+            <!-- Me Section -->
+			<div class="sections" id="samu_syrjanen">
+				<div class="card">
+					<p class="card-title">Samu Syrjänen</p>
+				</div>
+
+				<div class="card">
+					<div class="profile-pic-container">
+						<img src="images/icon.png" id="profile-pic">
+					</div>
+					<p>
+						Student, research assistant, and soon data engineer
+						Student, research assistant, and soon data engineer
+						Student, research assistant, and soon data engineer
+						Student, research assistant, and soon data engineer
+						Student, research assistant, and soon data engineer
+						Student, research assistant, and soon data engineer
+						Student, research assistant, and soon data engineer
+						Student, research assistant, and soon data engineer
+						Student, research assistant, and soon data engineer
+					</p>
+					<div id="nav-buttons">
+						<a href="https://samusyrjanen.github.io/CV_Samu_Syrjanen/" class="nav-btn" target="_blank">Go to CV</a>
+						<a href="CV_Samu_Syrjänen_English.pdf" class="nav-btn nav-btn-icon" download target="_blank">
+							<i class="fas fa-download"></i>
+						</a>
+					</div>
+
+					<!-- Show More Section -->
+					<!--<div class="expandable-section">
+						<div class="content">
+							<p>This is the text before "show more" content.</p>
+							<p class="after-show-more hidden">This is the hidden content revealed after clicking "show more".</p>
+						</div>
+						<div class="toggle-button">Show more</div>
+					</div>-->
+				</div>
+			</div>
+
+            <!-- Career Section -->
+			<div class="sections" id="career">
+				<div class="card title">
+					<p class="card-title">Career</p>
+				</div>
+
+				<div class="card">
+					<!-- Timeline -->
+					<div class="timeline">
+						<div class="timelinecontainer right">
+							<div class="timeline-date">2017</div>
+							<div class="timelinecontent">
+								<h2>2017</h2>
+								<p>Lorem ipsum..</p>
+							</div>
+						</div>
+						<div class="timelinecontainer right">
+							<div class="timeline-date">2016</div>
+							<div class="timelinecontent">
+								<h2>2016</h2>
+								<p>Lorem ipsum..</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="sections" id="projects">
+				<div class="card title">
+					<p class="card-title">Projects</p>
+				</div>
+
+				<div class="card title">
+					<div class="project-names">
+						<button class="project-name" id="project1">Project 1</button>
+						<button class="project-name" id="project2">Project 2</button>
+						<button class="project-name" id="project3">Project 3</button>
+					</div>
+				</div>
+
+				<!-- Projects Section -->
+				<div class="card">
+					<div class="project-pic-container">
+						<img src="images/icon.png" class="project-pics fade">
+						<img src="images/sortext_commands.png" class="project-pics fade">
+						<img src="images/tracking_view.png" class="project-pics fade">
+					</div>
+					<!--<p class="card-title">Projects</p>-->
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<!--<img src="images/icon.png" style="width:100%">
+							<div class="text">Caption One</div>-->
+							<p>
+								Student, research assistant, and soon data engineer
+								Student, research assistant, and soon data engineer
+								Student, research assistant, and soon data engineer
+								Student, research assistant, and soon data engineer
+								Student, research assistant, and soon data engineer
+								Student, research assistant, and soon data engineer
+								Student, research assistant, and soon data engineer
+								Student, research assistant, and soon data engineer
+								Student, research assistant, and soon data engineer
+							</p>
+						</div>
+						<div class="mySlides fade">
+							<img src="images/sortext_commands.png" style="width:100%">
+							<div class="text">Caption Two</div>
+						</div>
+						<div class="mySlides fade">
+							<img src="images/tracking_view.png" style="width:100%">
+							<div class="text">Caption Three</div>
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+
+					<!--<div class="project-dots" style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+					</div>-->
+				</div>
+			</div>
+			
+			<!-- Skill Section -->
+			<div class="sections" id="skills">
+				<div class="card title">
+					<p class="card-title">Skills</p>
+				</div>
+
+				<div class="card">
+					<ul>
+						<li>HTML & CSS <span class="stars">
+							<img src="images/icon.png" alt="Star" class="star-img">
+							<img src="images/icon.png" alt="Star" class="star-img">
+							<img src="images/icon.png" alt="Star" class="star-img">
+							<img src="images/icon.png" alt="Star" class="star-img">
+							<img src="images/icon.png" alt="Star" class="star-img">
+						</span></li>
+						<li>JavaScript <span class="stars">
+							<img src="images/icon.png" alt="Star" class="star-img">
+							<img src="images/icon.png" alt="Star" class="star-img">
+							<img src="images/icon.png" alt="Star" class="star-img">
+							<img src="images/icon.png" alt="Star" class="star-img">
+						</span></li>
+						<li>Python <span class="stars">
+							<img src="images/icon.png" alt="Star" class="star-img">
+							<img src="images/icon.png" alt="Star" class="star-img">
+						</span></li>
+					</ul>
+				</div>
+			</div>
+
+            <!-- Future Section -->
+			<div class="sections" id="future">
+				<div class="card title">
+					<p class="card-title">Future</p>
+				</div>
+
+				<div class="card">
+					<p>Who knows.</p>
+				</div>
+			</div>
+
+            <!-- Contact Section -->
+			<div class="sections" id="contact_me">
+				<div class="card title">
+					<p class="card-title">Contact Me</p>
+				</div>
+
+				<div class="card">
+					<p class="contact-info"><img src="images/icon.png" alt="Star" class="contact-img">samu.syrjanen@gmail.com</p>
+					<p class="contact-info"><img src="images/icon.png" alt="Star" class="contact-img"><a id="link" href="https://www.linkedin.com/in/samu-syrj%C3%A4nen/">Linkedin</a></p>
+					<div class="message-container">
+						<p>Send me a message:</p>
+						<form action="action_page.php">
+							<label for="name">Name</label>
+							<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+							<label for="subject">Message</label>
+							<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+							<input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <script src="new_scripts.js"></script>
+</body>
+</html>
