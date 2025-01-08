@@ -17,10 +17,10 @@ document.querySelectorAll('#left-nav a').forEach(anchor => {
 // Highlight the current section in the navigation bar
 const sections = document.querySelectorAll('.sections');
 const navLinks = document.querySelectorAll('#left-nav a');
-const highlightOffset = 200; // Adjust this value to set the offset for highlighting
+const highlightOffset = 0; // Adjust this value to set the offset for highlighting
 
 function activateLinkOnScroll() {
-    let scrollPosition = window.scrollY + highlightOffset; // Add the offset to the scroll position
+    let scrollPosition = window.scrollY + window.innerHeight / 2 + highlightOffset; // Add the offset to the scroll position
 
     sections.forEach((section, index) => {
         const sectionTop = section.offsetTop;
@@ -146,3 +146,12 @@ document.querySelectorAll('.expandable-section').forEach(section => {
         toggleButton.textContent = isHidden ? 'Show less' : 'Show more';
     });
 });
+
+/*document.querySelector('form').addEventListener('submit', function (e) {
+    const name = document.querySelector('#fname').value.trim();
+    const message = document.querySelector('#subject').value.trim();
+    if (!name || !message) {
+        e.preventDefault();
+        alert('Please fill in all fields.');
+    }
+});*/

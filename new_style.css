@@ -1,3 +1,9 @@
+/*
+base #00B6BC
+highlight #0A758F
+dark #042F39
+*/
+
 @font-face {
     font-family: "Lato-Black";
     src: url('Lato/Lato-Black.ttf') format('truetype');
@@ -40,22 +46,27 @@
 }
 
 html {
-    font-family: Lato-LightItalic, Lato-Italic;
-    background: rgb(127, 127, 127);
+    font-family: Lato-Light, Lato-Light;
+    background: white;
+    font-size: 18px;
 }
 a {
     text-decoration: none;
     color: black;
 }
+/*.timelinecontent > a {
+    margin-top: 80px;
+}*/
 hr {
     background: grey;
 }
 .main-container {
     position: relative;
     display: flex;
-    background: rgba(238, 255, 248, 0.836);
+    /*background: rgba(238, 255, 248, 0.836);*/
+    background: white;
     /* margin-left: 220px; */
-    padding: 10% 0;
+    padding: 10% 0 20% 0;
 }
 #info-cards {
     flex: 55%;
@@ -74,7 +85,7 @@ hr {
     position: relative;
     width: 80px;
     height: 80px;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 #image > a {
     position: absolute;
@@ -94,17 +105,24 @@ hr {
 }
 #about,
 .card > ul > li {
-    padding: 0 0 0 0;
     position: relative;
     display: inline-block;
     width: 40%;
     margin: 0 0 0 -25px;
 }
-#link {
-    color: rgb(30, 115, 212);
-    font-size: 16px;
-    font-family: "Avenir Next LT Pro Light", sans-serif;
+
+.link {
+    color: #313131;
+    font-size: 17px;
+    font-family: Lato-Bold, Lato-BoldItalic;
     font-weight: bolder;
+    margin-right: 40px;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.link:after {
+    content: "";
 }
 #social-links,
 #about {
@@ -138,31 +156,37 @@ hr {
 }
 .card {
     position: relative;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);*/
     overflow-x: visible;
-    margin: 30px 10% 0 0;
+    margin: 30px 5% 0 0;
     /*padding: 30px 30px 30px 30px;*/
-    background-color: #fff;
+    background-color: white;
     align-items: center;
     /*overflow: visible;*/
 }
 .card > ul > li,
 .card > p,
+.card > h5,
 .card > div {
     padding-left: 40%; /* Increase this value to move text further to the right */
-    max-width: 600px;
+    max-width: 700px;
+}
+.timelinecontent > p {
+    margin: 5px 0 5px 0;
+    color: #000000;
 }
 .card-title {
     color: #0e141e;
-    font-size: 30px;
+    font-size: 31px;
     line-height: 1;
-    margin: 0 0 0 0;
+    margin: 80px 0 50px 0;
+    font-family: Lato-LightItalic, Lato-Italic;
 }
 .card > a {
-    margin: 0;
+    /*margin: 0;*/
     margin-left: 25px;
     padding: 0;
-    border: 0;
+    /*border: 0;*/
     height: auto;
     background: transparent;
     color: #097bbf;
@@ -233,13 +257,12 @@ hr {
     left: 0;
     width: 200px;
     height: 100%;
-    background-color: #f4f4f400;
-    /* box-shadow: 2px 0 5px rgba(0,0,0,0.1); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    font-family: Lato-LightItalic, Lato-Italic;
 }
 
 #left-nav ul {
@@ -256,23 +279,28 @@ hr {
 
 #left-nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #1e1e1e;
     padding: 10px 20px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     transition: all 0.3s ease-in-out;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0);
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+    font-size: 20px;
 }
 
 #left-nav ul li a:hover {
-    color: #097bbf;
-    background: #e3f2fd;
+    /*color: #097bbf;
+    background: #eaeaea;*/
+    text-decoration: underline;
+    text-decoration-color: #0A758F;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
 }
 
 #left-nav ul li a.active {
-    color: #fff;
-    background: #097bbf; /* Ensure this contrast fits */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /*color: #fff;*/
+    /*background: #00B6BC;*/ /* Ensure this contrast fits */
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
 }
 
 /* Add a bar indicator to the left of active link */
@@ -284,8 +312,8 @@ hr {
     transform: translateY(-50%);
     width: 8px;
     height: 40px;
-    background-color: #097bbf;
-    border-radius: 0 5px 5px 0;
+    /*background-color: #00B6BC;*/
+    /*border-radius: 0 5px 5px 0;*/
 }
 
 /* Navigation bar header */
@@ -298,8 +326,7 @@ hr {
 }
 
 #nav-header h2 {
-    margin: 0;
-    color: #097bbf;
+    color: #138B83;
 }
 
 /* Navigation buttons */
@@ -311,24 +338,42 @@ hr {
     gap: 5px;
 }
 
-.nav-btn {
+.cv-btn-left {
     text-decoration: none;
     color: white;
-    background-color: #097bbf;
+    background-color: #00B6BC;
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition:
         background-color 0.3s ease,
         transform 0.2s ease;
+    border-radius: 15px 0 0 15px;
+}
+.cv-btn-right {
+    text-decoration: none;
+    color: Black;
+    background-color: #00B6BC;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+    border-radius: 0 15px 15px 0;
 }
 
-.nav-btn:hover {
-    background-color: #065a94;
+.cv-btn-left:hover {
+    background-color: #0A758F;
     transform: scale(1.05);
 }
 
-.nav-btn-icon {
+.cv-btn-right:hover {
+    background-color: #0A758F;
+    transform: scale(1.05);
+}
+
+.cv-btn-icon {
     padding: 10px;
     width: 40px;
     display: flex;
@@ -337,15 +382,10 @@ hr {
 }
 
 .nav-btn-icon i {
-    color: white;
+    color: rgba(255, 255, 255, 0);
 }
 
-/* Graphical connection for buttons */
-#nav-buttons .nav-btn {
-    border-radius: 5px 0 0 5px;
-}
-
-#nav-buttons .nav-btn-icon {
+#cv-buttons .cv-btn-icon {
     border-radius: 0 5px 5px 0;
     margin-left: -1px;
 }
@@ -372,23 +412,31 @@ hr {
 
 #nav-links ul li a {
     text-decoration: none;
-    color: #333;
+    color: #1e1e1e;
     padding: 10px 20px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     transition: all 0.3s ease-in-out;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*background: #fff;*/
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
 }
 
 #nav-links ul li a:hover {
-    color: #097bbf;
-    background: #e3f2fd;
+    /*color: Black;*/
+    /*background: #eaeaea;*/
+    /*text-decoration: underline;
+    text-decoration-color: #0A758F;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;*/
 }
 
 #nav-links ul li a.active {
-    color: #fff;
-    background: #097bbf;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /*color: #fff;*/
+    /*background: #00B6BC;*/
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
+    text-decoration: underline;
+    text-decoration-color: #0A758F;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
 }
 
 /* Active link indicator */
@@ -400,8 +448,8 @@ hr {
     transform: translateY(-50%);
     width: 8px;
     height: 40px;
-    background-color: #097bbf;
-    border-radius: 0 5px 5px 0;
+    /*background-color: #00B6BC;*/
+    /*border-radius: 0 5px 5px 0;*/
 }
 
 /* Styling the toggle bar */
@@ -412,7 +460,7 @@ hr {
     background-color: #097bbf;
     color: white;
     padding: 5px 15px;
-    border-radius: 5px 0 0 5px;
+    /*border-radius: 5px 0 0 5px;*/
     cursor: pointer;
     transition: all 0.3s ease;
     transform: rotate(0);
@@ -431,8 +479,8 @@ hr {
     padding: 15px;
     margin-top: 10px;
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    /*border: 1px solid #ddd;
+    border-radius: 5px;*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.3s ease;
 }
@@ -455,12 +503,13 @@ hr {
     /*border: 1px solid #ddd;
     border-radius: 10px;*/
     overflow: visible;
-    height: 500px;
+    height: 650px;
 }
 
 /* Hide the slides by default */
 .mySlides {
     display: none;
+    margin-top: 50px;
     /*padding: 30px;*/
 }
 
@@ -476,9 +525,10 @@ hr {
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 30px/*3px 0 0 3px*/;
+    border-radius: 25px 0 0 25px;
     user-select: none;
-    background-color: darkgray;
+    /*background-color: #00B6BC;*/
+    background-color: #313131;
     /*left: 30%;*/
 }
 
@@ -493,9 +543,9 @@ hr {
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 30px/*0 3px 3px 0*/;
+    border-radius: 0 25px 25px 0;
     user-select: none;
-    background-color: darkgray;
+    background-color: #313131;
     right: 0;
 }
 
@@ -503,7 +553,7 @@ hr {
 
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000000;
 }
 
 /* Caption text */
@@ -536,7 +586,7 @@ hr {
 /* Fade animation */
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 0.5s;
 }
 
 @keyframes fade {
@@ -603,24 +653,25 @@ hr {
 .timeline {
     position: relative;
     /*max-width: 1200px;*/
-    margin: 0 0 0 -40px;
+    margin-left: -40px;
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
     content: "";
     position: absolute;
-    width: 4px;
-    background-color: rgb(240, 177, 177);
+    width: 3px;
+    background-color: #00B6BC;
     top: 0;
     bottom: 0;
     left: auto;
     margin-left: -1px;
+    margin-top: 35px;
 }
 
 /* Container around content */
 .timelinecontainer {
-    padding: 10px 0 10px 40px;
+    padding: 0 0 10px 20px;
     position: relative;
     background-color: inherit;
     /*width: 50%;*/
@@ -634,7 +685,7 @@ hr {
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #f66a6a;
+    border: 4px solid #042F39;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -665,7 +716,7 @@ hr {
 }
 
 /* Add arrows to the right container (pointing left) */
-.right::before {
+/*.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -676,7 +727,7 @@ hr {
     border: medium solid rgb(227, 227, 227);
     border-width: 10px 10px 10px 0;
     border-color: transparent rgb(227, 227, 227) transparent transparent;
-}
+}*/
 
 /* Fix the circle for containers on the right side */
 .right::after {
@@ -685,10 +736,10 @@ hr {
 
 /* The actual content */
 .timelinecontent {
-    padding: 20px 30px;
-    background-color: rgb(234, 234, 234);
+    margin: 0 0 0 20px;
+    background-color: white;
     position: relative;
-    border-radius: 6px;
+    /*border-radius: 6px;*/
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -727,12 +778,13 @@ hr {
 
 .timeline-date {
     position: absolute;
-    left: -50px; /* Adjust based on the desired distance */
-    top: 15px; /* Align with the circle or content */
+    left: -30px; /* Adjust based on the desired distance */
+    top: 20px; /* Align with the circle or content */
     color: #555; /* Choose a suitable color */
     transform: translateX(-100%);
     text-align: right;
-    width: 40px; /* Adjust as necessary */
+    /*width: 40px;*/ /* Adjust as necessary */
+    font-family: Lato-LightItalic, Lato-Italic;
 }
 
 /* Contact Me */
@@ -749,12 +801,12 @@ textarea {
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    font-family: Lato-LightItalic, Lato-Italic;
+    font-family: Lato-Light, Lato-Light;
 }
 
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
-    background-color: #04aa6d;
+    background-color: #00B6BC;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -764,11 +816,11 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #0A758F;
 }
 
 #profile-pic {
-    width: 100px;
+    width: 120px;
     margin: 0 20px 0 0;
     position: absolute;
     right: 0;
@@ -794,13 +846,15 @@ input[type="submit"]:hover {
 }
 
 .project-pics {
-    width: 150px;
+    width: 400px;
    /* margin: 50px 20px 0 0;*/
     position: absolute;
-    right: 0;
+    right: 20px;
     height: auto;
     /*z-index: 999;*/
     display: none;
+    -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 .project-dots {
@@ -816,22 +870,30 @@ input[type="submit"]:hover {
 }
 
 .project-name {
-    background: none;
+    background: white;
     border: none;
     color: #333;
     cursor: pointer;
-    padding: 5px 10px;
+    margin: 5px 10px 5px 0;
     transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-family: Lato-Bold, Lato-BoldItalic;
+    font-size: 16px;
 }
 
 .project-name:hover {
-    color: #097bbf;
+    color: Black;
     text-decoration: underline;
+    text-decoration-color: #0A758F;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
 }
 
 .project-name.active {
     text-decoration: underline;
-    color: #097bbf;
+    color: Black;
+    text-decoration-color: #0A758F;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
 }
 
 .stars {
@@ -842,7 +904,7 @@ input[type="submit"]:hover {
 @media screen and (min-width: 1500px) {
     .stars {
         float: right; /* Pushes the stars to the right side */
-        margin: 0 100px 0 0;
+        margin: 0 20px 0 0;
     }
 }
 
@@ -854,13 +916,14 @@ input[type="submit"]:hover {
 
 .message-container {
     position: relative;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);*/
     overflow-x: hidden;
     margin: 0 0 0 0;
     /*padding: 30px 30px 30px 30px;*/
     background-color: #fff;
     align-items: center;
     padding-left: 0;
+    font-family: Lato-Light, Lato-Light;
 }
 
 
@@ -870,9 +933,16 @@ input[type="submit"]:hover {
     height: 16px;
     margin: 0 10px 0 0; /* Spacing between stars */
 }
+.contact-icon {
+    color: #333; /* Adjust color */
+    margin-right: 10px; /* Space between the icon and text */
+    font-size: 16px; /* Adjust size */
+    vertical-align: middle; /* Align with text */
+}
 
 .contact-info {
     margin: 5px 0 5px -25px;
+    font-family: Lato-Light, Lato-Light;
 }
 
 .card-title-container {
@@ -883,15 +953,48 @@ input[type="submit"]:hover {
     /*padding: 30px 30px 30px 30px;*/
     background-color: #fff;
     align-items: center;
+    font-family: Lato-Light, Lato-Light;
 }
-
-
-
 .title {
     margin-bottom: -20px;
 }
 .sections {
-    background-color: #fff;
+    background-color: white;
+}
+
+
+
+
+
+
+
+h5 {
+    margin: 5px 0 5px 0;
+    padding: 0 0 0 0;
+    font-size: 15px;
+}
+
+h3 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 22px;
+}
+.timelinecontent > h3 {
+    margin: 40px 0 0 0;
+}
+
+#last-career-listing {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+#skills .card ul li {
+    margin-bottom: 5px; /* Adjust the value to control the spacing */
 }
 
 
