@@ -343,7 +343,6 @@ hr {
     color: white;
     background-color: #00B6BC;
     padding: 10px 15px;
-    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition:
         background-color 0.3s ease,
@@ -355,7 +354,6 @@ hr {
     color: Black;
     background-color: #00B6BC;
     padding: 10px 15px;
-    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition:
         background-color 0.3s ease,
@@ -825,6 +823,8 @@ input[type="submit"]:hover {
     position: absolute;
     right: 0;
     height: auto;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 .profile-pic-container {
@@ -995,6 +995,38 @@ h3 {
 
 #skills .card ul li {
     margin-bottom: 5px; /* Adjust the value to control the spacing */
+}
+
+
+
+#copy-button {
+    background-color: #00B6BC;
+    color: white;
+    border-radius: 10px;
+    border-width: 0;
+    margin-top: 4px;
+    margin-left: 5px;
+    position: absolute;
+    text-decoration: none;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);*/
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+#copy-button:hover {
+    background-color: #0A758F;
+    transform: scale(1.05);
+}
+#copy-feedback {
+    margin-left: 10px;
+    color: Black;
+    font-size: 14px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-out; /* Smooth fade-out effect */
+}
+
+#copy-feedback.visible {
+    opacity: 1; /* Make it visible */
 }
 
 

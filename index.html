@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,7 +35,7 @@
 
 				<div class="card">
 					<div class="profile-pic-container">
-						<img src="images/icon.png" id="profile-pic">
+						<img src="images/Cut2_WhatsApp_Image_2025-01-08_at_18.12.20.png" id="profile-pic">
 					</div>
 					<p>
 						Hi, I study Data Science and Computer Science at the University of Helsinki. I'm most interested in
@@ -486,8 +487,8 @@
 					</ul>
 					<h5>Languages</h5>
 					<ul>
-						<li>English</li>
-						<li>Finnish</li>
+                      <li>English <span class="stars">CEFR C1</span></li>
+                      <li>Finnish <span class="stars">Native</span></li>
 					</ul>
 				</div>
 			</div>
@@ -519,7 +520,10 @@
 				</div>
 
 				<div class="card">
-					<p class="contact-info"><i class="fas fa-envelope contact-icon"></i>samu.syrjanen@gmail.com</p>
+					<p class="contact-info">
+                      <i class="fas fa-envelope contact-icon"></i>samu.syrjanen@gmail.com<sl-copy-button value="samu.syrjanen@gmail.com">Copy</sl-copy-button><!--<button id="copy-button" onclick="copyText()">Copy</button>-->
+                      <!--<span id="copy-feedback" class="hidden">Copied</span>-->
+                  </p>
 					<p class="contact-info"><i class="fab fa-linkedin contact-icon"></i><a class="link" href="https://www.linkedin.com/in/samu-syrj%C3%A4nen/" target="_blank">Linkedin <i class="fa fa-external-link" style="font-size: 14px"></i></a></p>
 					<!--<div class="message-container">
 						<p>Send me a message:</p>
@@ -538,6 +542,7 @@
         </div>
     </div>
 
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/components/copy-button/copy-button.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

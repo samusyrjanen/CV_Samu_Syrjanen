@@ -155,3 +155,15 @@ document.querySelectorAll('.expandable-section').forEach(section => {
         alert('Please fill in all fields.');
     }
 });*/
+
+function copyText() {
+    navigator.clipboard.writeText("samu.syrjanen@gmail.com").then(() => {
+        const feedback = document.getElementById("copy-feedback");
+        feedback.classList.add("visible"); // Show the feedback text
+        setTimeout(() => {
+            feedback.classList.remove("visible"); // Hide it after 2 seconds
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+}
