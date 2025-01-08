@@ -495,17 +495,17 @@ hr {
     }
 }
 
-/* Slideshow container */
 .slideshow-container {
     /*max-width: 800px;*/
     position: relative;
     margin: auto 0;
-    /*border: 1px solid #ddd;
-    border-radius: 10px;*/
-    overflow: visible;
-    height: 650px;
+    overflow-x: hidden; /* Horizontal scrolling */
+    overflow-y: auto;
+    /*overflow: visible;*/
+    height: 740px;
+    /*white-space: nowrap;*/ /* Prevent wrapping for horizontal scrolling */
+    scrollbar-width: thin; /* Hide scrollbar in Firefox */
 }
-
 /* Hide the slides by default */
 .mySlides {
     display: none;
