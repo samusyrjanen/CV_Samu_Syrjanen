@@ -1,0 +1,12 @@
+{
+  "english": {
+    "introText": "Welcome to my website!",
+    "text2": "I specialize in Data Science and Machine Learning.",
+    "additionalText": "Feel free to explore my projects and skills."
+  },
+  "finnish": {
+    "introText": "Tervetuloa verkkosivustolleni!",
+    "text2": "Erikoistun data-analytiikkaan ja koneoppimiseen.",
+    "additionalText": "Tutustu projekteihini ja taitoihini."
+  }
+}

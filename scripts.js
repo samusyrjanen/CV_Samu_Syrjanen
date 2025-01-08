@@ -167,3 +167,33 @@ function copyText() {
         console.error('Failed to copy text: ', err);
     });
 }
+
+// LANGUAGE SELECTION
+/*fetch("translations.json")
+  .then((response) => response.json())
+  .then((translations) => {
+    const languageButtons = document.querySelectorAll("#language-buttons button");
+    let currentLanguage = "english";
+
+    function updateLanguage(language) {
+      document.querySelectorAll("[data-key]").forEach((element) => {
+        const key = element.getAttribute("data-key");
+        if (translations[language][key]) {
+          element.textContent = translations[language][key];
+        }
+      });
+      currentLanguage = language;
+    }
+
+    // Set the default language
+    updateLanguage(currentLanguage);
+
+    // Add event listeners for language buttons
+    languageButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedLanguage = button.id.split("-")[0]; // Extract language from button ID
+        updateLanguage(selectedLanguage);
+      });
+    });
+  })
+  .catch((error) => console.error("Error loading translations:", error));*/
