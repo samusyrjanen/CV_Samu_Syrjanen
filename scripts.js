@@ -169,11 +169,11 @@ document.querySelectorAll('.expandable-section').forEach(section => {
 }*/
 
 // LANGUAGE SELECTION
-fetch("translations.json")
+/*fetch("translations.json")
   .then((response) => response.json())
   .then((translations) => {
     const languageButtons = document.querySelectorAll("#language-buttons button");
-    let currentLanguage = "english";
+    let currentLanguage = "finnish"; // Default language
 
     function updateLanguage(language) {
       document.querySelectorAll("[data-key]").forEach((element) => {
@@ -182,6 +182,11 @@ fetch("translations.json")
           element.textContent = translations[language][key];
         }
       });
+
+      // Update the highlight on the language buttons
+      languageButtons.forEach((button) => button.classList.remove("active"));
+      document.querySelector(`#${language}-button`).classList.add("active");
+
       currentLanguage = language;
     }
 
@@ -196,4 +201,4 @@ fetch("translations.json")
       });
     });
   })
-  .catch((error) => console.error("Error loading translations:", error));
+  .catch((error) => console.error("Error loading translations:", error));*/

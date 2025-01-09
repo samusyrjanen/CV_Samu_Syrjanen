@@ -1049,6 +1049,14 @@ h3 {
     background-color: white;
     transform: scale(1.05);
 }
+.language-button.active {
+    background-color: #0A758F;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #0A758F;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
 
 
 
