@@ -156,7 +156,7 @@ document.querySelectorAll('.expandable-section').forEach(section => {
     }
 });*/
 
-function copyText() {
+/*function copyText() {
     navigator.clipboard.writeText("samu.syrjanen@gmail.com").then(() => {
         const feedback = document.getElementById("copy-feedback");
         feedback.classList.add("visible"); // Show the feedback text
@@ -166,10 +166,10 @@ function copyText() {
     }).catch(err => {
         console.error('Failed to copy text: ', err);
     });
-}
+}*/
 
 // LANGUAGE SELECTION
-/*fetch("translations.json")
+fetch("translations.json")
   .then((response) => response.json())
   .then((translations) => {
     const languageButtons = document.querySelectorAll("#language-buttons button");
@@ -196,4 +196,4 @@ function copyText() {
       });
     });
   })
-  .catch((error) => console.error("Error loading translations:", error));*/
+  .catch((error) => console.error("Error loading translations:", error));

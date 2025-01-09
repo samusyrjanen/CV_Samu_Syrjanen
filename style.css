@@ -1032,19 +1032,34 @@ h3 {
 
 
 .language-button {
-    background-color: #00B6BC;
-    color: white;
-    padding: 10px 15px;
+    background-color: white;
+    color: Black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-family: Lato-Bold, Lato-BoldItalic;
     font-size: 16px;
-    margin-top: 10px;
-    margin-left: 40%;
+    float: right;
+    margin-top: -23%;
+    margin-bottom: 23%;
+    margin: -23% 0 23% 10px;
 }
 
 .language-button:hover {
-    background-color: #0A758F;
+    background-color: white;
     transform: scale(1.05);
 }
+
+
+
+
+
+#language-selection-container {
+    background-color: azure;
+    padding-left: 40%;
+    max-width: 700px;
+    /*margin-top: -50px;
+    margin-bottom: 50px;*/
+}
+
+
